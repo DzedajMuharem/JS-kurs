@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="kartice-sve">
+      <div class="kartica">
+        <img src="./img/carrot.png" alt="" />
+        <div class="body-kartice">
+          <h2>Ocena: 7.2</h2>
+          <h1>Barbarian</h1>
+          <button onclick="addToTotal(this)" class="btn">+ Dodaj</button>
+          <p>Cena: <span>$10</span></p>
+          <button onclick="deleteBtn(this)" class="btn-delete">X</button>
+        </div>
+      </div>
+      <div class="kartica">
+        <img src="./img/carrot.png" alt="" />
+        <div class="body-kartice">
+          <h2>Ocena: 7.2</h2>
+          <h1>Barbarian</h1>
+          <button onclick="addToTotal(this)">+ Dodaj</button>
+          <p>Cena: <span>$10</span></p>
+          <button onclick="deleteBtn(this)" class="btn-delete">X</button>
+        </div>
+      </div>
+      <div class="kartica">
+        <img src="./img/carrot.png" alt="" />
+        <div class="body-kartice">
+          <h2>Ocena: 7.2</h2>
+          <h1>Barbarian</h1>
+          <button onclick="addToTotal(this)">+ Dodaj</button>
+          <p>Cena: <span>$10</span></p>
+          <button onclick="deleteBtn(this)" class="btn-delete">X</button>
+        </div>
+      </div>
+    </div>
+    <p id="odgledanih"></p>
+    <p id="total"></p>
+    <script src="./app.js"></script>
+  </body>
+</html>
