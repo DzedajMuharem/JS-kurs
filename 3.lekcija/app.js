@@ -40,3 +40,43 @@ link.addEventListener("click", function (event) {
   event.preventDefault();
   console.log(event.target.innerText);
 });
+
+let form = document.querySelector("form");
+
+form.addEventListener("submit", function (event) {
+  console.log("nema forme");
+  event.preventDefault();
+});
+
+let select = document.querySelector("select");
+
+select.addEventListener("change", function (event) {
+  console.log(event.target.value);
+});
+
+window.addEventListener("resize", function () {
+  // console.log(window.innerWidth + "px");
+  if (window.innerWidth > 1000) {
+    console.log("Prozor veci od 1000");
+  } else {
+    console.log("Prozor manji od hiljadu");
+  }
+});
+
+let input = document.querySelector("input");
+
+input.addEventListener("keydown", function (event) {
+  // console.log(event);
+  // console.log(event.key);
+  if (event.key === "Delete") {
+    console.log("Obrisao si nesto");
+  }
+});
+
+window.addEventListener("mousemove", function (event) {
+  console.log("mis je pomjeren");
+});
+
+input.addEventListener("mousemove", function (event) {
+  console.log("mis se pomjerio preko polja input");
+});
