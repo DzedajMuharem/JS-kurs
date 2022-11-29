@@ -20,6 +20,7 @@ window.addEventListener("keydown", function (event) {
   let audio = document.querySelector(`audio[data-key="${code}"]`);
   audio.currentTime = 0;
   audio.play();
+
   //   switch (code) {
   //     case 81:
   //       beliQq();
